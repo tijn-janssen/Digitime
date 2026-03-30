@@ -1,0 +1,53 @@
+h1 {
+    background-color: #7b3d32;
+    color: White;
+}
+
+.accordion-button {
+    background-color: #a45241;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #d47b68;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    color: #555;
+}
+
+.btn-primary {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #52251b;
+    color: white;
+}
+
+.btn, .btn-primary:hover {
+    background-color: #994632; !important;
+    color: white;
+}
+
+.btn-primary:active {
+    background-color: #52251b;
+    color: white;
+}
+
+.btn-primary:focus {
+    background-color: #52251b;
+    color: white;
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background-color: #52251b; !important;
+    border-color: transparent !important;
+}
+
