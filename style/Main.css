@@ -7,23 +7,129 @@
     box-sizing: border-box;
 }
 
-H1 {
-    padding: 2rem;
-    background-color: var(--primary-color);
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+
+    h2 {
+        border-bottom: 2px solid black;
+    }
+
+
+
+    section {
+        padding-bottom: 2rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    img, video {
+        border-radius: 3rem;
+    }
+
+    #logo {
+        border-radius: 0;
+    }
 }
 
-h2 {
-    border-bottom: 2px solid black;
+header {
+    background-color: grey;
 }
 
-section {
-    padding-bottom: 2rem;
-}
-
-table {
+footer {
     width: 100%;
+    background-color: grey;
+    color: white;
+    position: absolute;
 }
 
-img, video {
-    border-radius: 3rem;
+#tijdlijn {
+    list-style-type: none;
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border: 1px solid black;
+        width: 20rem;
+        height: 20rem;
+        text-align: center;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+}
+
+#Prehistorie {
+    border-radius: 2rem 2rem 0 0;
+    background-color: #7b3d32;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #633128;
+    }
+}
+
+#OudeNabijeOosten {
+    background-color: #008AB7;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #006f94;
+    }
+}
+
+#KlassiekeOudheid {
+    background-color: #253562;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #1a2646;
+    }
+}
+
+#Middeleeuwen {
+    background-color: #84A844;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #6a8736;
+    }
+}
+
+#VroegmoderneTijd {
+    background-color: #FFD93A;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e6c234;
+    }
+}
+
+#ModerneTijd {
+    background-color: #F06936;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #d15a2d;
+    }
+}
+
+#Heden {
+    background-color: #F34033;
+    border-radius: 0 0 2rem 2rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #c43329;
+    }
 }

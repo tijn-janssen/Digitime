@@ -1,5 +1,16 @@
+header {
+    background-color: #7b3d32; !important;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
 h1 {
-    background-color: #7b3d32;
     color: White;
 }
 
@@ -51,3 +62,8 @@ h1 {
     border-color: transparent !important;
 }
 
+footer {
+    background-color: #52251b;
+    color: white;
+    width: 100%;
+}
