@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
 }
 
-
 body {
     position: relative;
     min-height: 100vh;
@@ -18,10 +17,14 @@ body {
         border-bottom: 2px solid black;
     }
 
-
-
     section {
         padding-bottom: 2rem;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+
     }
 
     table {
@@ -34,6 +37,11 @@ body {
 
     #logo {
         border-radius: 0;
+    }
+
+    .btn-controle{
+        margin-top: 1rem;
+        width: 100%;
     }
 }
 

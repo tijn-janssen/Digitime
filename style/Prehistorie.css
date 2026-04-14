@@ -1,17 +1,27 @@
-header {
-    background-color: #7b3d32; !important;
-    color: white;
+body {
+    color: #52251b ;
 
-    a {
+    header {
+        background: #52251B;
+        background: linear-gradient(90deg, rgba(82, 37, 27, 1) 0%, rgba(123, 61, 50, 1) 100%);
         color: white;
-        text-decoration: none;
-        &:hover {
-            color: black;
+
+        h1 {
+            color: White;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: black;
+            }
         }
     }
-}
-h1 {
-    color: White;
+
+    h2 {
+        border-color: #52251b !important;
+    }
 }
 
 .accordion-button {
@@ -35,8 +45,6 @@ h1 {
 }
 
 .btn-primary {
-    margin-top: 1rem;
-    width: 100%;
     background-color: #52251b;
     color: white;
 }
@@ -65,5 +73,4 @@ h1 {
 footer {
     background-color: #52251b;
     color: white;
-    width: 100%;
 }
