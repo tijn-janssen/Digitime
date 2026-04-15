@@ -73,6 +73,7 @@ body {
 }
 
 footer {
-    background-color: #00455C;
+    background: #00455C;
+    background: linear-gradient(90deg, rgba(0, 69, 92, 1) 0%, rgba(0, 138, 183, 1) 100%);
     color: white;
 }

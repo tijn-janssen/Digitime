@@ -31,6 +31,12 @@ body {
         width: 100%;
     }
 
+    #Header {
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+    }
+
     img, video {
         border-radius: 3rem;
     }
@@ -45,8 +51,20 @@ body {
     }
 }
 
-header {
-    background-color: grey;
+#mainPageHeader {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../fotos/header.jpeg");
+    background-size: cover;
+    width: auto;
+    max-height: 300px;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    img {
+        max-width: 50rem;
+    }
 }
 
 footer {
@@ -58,85 +76,89 @@ footer {
 
 #tijdlijn {
     list-style-type: none;
+    width: 40rem;
+    margin: auto;
 
     li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        border: 1px solid black;
-        width: 20rem;
-        height: 20rem;
         text-align: center;
 
         a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 2rem;
             text-decoration: none;
             color: white;
+            height: 22rem;
+            text-align: center;
         }
 
     }
 }
 
-#Prehistorie {
+.tijdvak {
+    border: 1px solid black;
+}
+
+#Prehistorie div .tijdvak {
     border-radius: 2rem 2rem 0 0;
     background-color: #7b3d32;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #633128;
     }
 }
 
-#OudeNabijeOosten {
+#OudeNabijeOosten div .tijdvak{
     background-color: #008AB7;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #006f94;
     }
 }
 
-#KlassiekeOudheid {
+#KlassiekeOudheid div .tijdvak{
     background-color: #253562;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #1a2646;
     }
 }
 
-#Middeleeuwen {
+#Middeleeuwen div .tijdvak{
     background-color: #84A844;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #6a8736;
     }
 }
 
-#VroegmoderneTijd {
+#VroegmoderneTijd div .tijdvak{
     background-color: #FFD93A;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #e6c234;
     }
 }
 
-#ModerneTijd {
+#ModerneTijd div .tijdvak{
     background-color: #F06936;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #d15a2d;
     }
 }
 
-#Heden {
+#Heden div .tijdvak{
     background-color: #F34033;
     border-radius: 0 0 2rem 2rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #c43329;
