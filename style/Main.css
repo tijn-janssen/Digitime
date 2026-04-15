@@ -76,7 +76,7 @@ footer {
 
 #tijdlijn {
     list-style-type: none;
-    width: 40rem;
+    width: 100%;
     margin: auto;
 
     li {
