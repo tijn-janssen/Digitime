@@ -9,6 +9,7 @@ const footer = document.getElementById("footer")
 header.classList.add("bg-economisch");
 footer.classList.add("bg-economisch")
 button.addEventListener("click", e => {
+    e.preventDefault();
     [item1, item2, item3, item4].forEach(item => item.classList.remove("highlight"));
     let classItem1 = document.getElementById("item1").className;
     let classItem2 = document.getElementById("item2").className;

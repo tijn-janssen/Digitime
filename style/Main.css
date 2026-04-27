@@ -54,6 +54,20 @@ body {
         margin-top: 1rem;
         width: 100%;
     }
+
+    #domeinen {
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+        background-color: Grey;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: darkgray;
+        }
+    }
 }
 
 #mainPageHeader {
