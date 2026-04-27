@@ -38,7 +38,7 @@ let vogel = {
     height: 14,
     velocity: 0,
     gravity: 0.05,
-    lift: -3
+    lift: -2
 };
 
 let muur = {
@@ -139,6 +139,7 @@ const teken = () => {
 
 window.addEventListener("keydown", (e) => {
     if (e.code === "Space") vlieg();
+    e.preventDefault();
 });
 
 window.addEventListener("touchstart", (e) => {

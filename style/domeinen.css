@@ -1,85 +1,128 @@
-/* 1. Algemene Pagina Styling */
-
-/* 2. De Game Container (De basis voor alle centrering) */
-#game-container {
-    display: block;      /* Veranderd naar block voor makkelijker centreren op pagina */
-    margin: 0 auto;      /* Centreert de hele game-box op je website */
-    position: relative;
-    width: 800px;        /* MOET gelijk zijn aan canvas.width in JS */
-    height: 500px;       /* MOET gelijk zijn aan canvas.height in JS */
-    border: 5px solid #2c3e50;
-    border-radius: 12px;
-    overflow: hidden;    /* Zorgt dat muren niet buiten de box zichtbaar zijn */
-    line-height: 0;      /* Verwijdert witruimte onder het canvas */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* 3. Het Canvas */
-#gameCanvas {
-    width: 800px;
-    height: 500px;
-    background-color: #ffffff;
-    display: block;
-}
-
-/* 4. De UI Laag (Vraag en Score) */
-#ui-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;         /* Is nu exact 800px breed */
-    height: 100%;
-    pointer-events: none; /* Je kunt door de tekst heen klikken naar het spel */
-    z-index: 10;
-
-    /* Flexbox zorgt voor perfecte horizontale centrering */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-}
-
-#question-text {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 12px 25px;
-    border-radius: 10px;
-    font-size: 24px;
-    font-weight: bold;
+.domein {
+    background-color: #0dcaf0;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2.45rem;
+    margin-bottom: 2.45rem;
     text-align: center;
-    max-width: 85%;
-    line-height: 1.3;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    align-content: center;
 }
 
-#score-text {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+#blok2 {
+    margin-left: 5rem;
+    margin-right: 20rem;
 }
 
-/* 5. De Startknop */
-#start-knop {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* Transform schuift de knop 50% van zijn eigen maat terug naar links/boven */
-    transform: translate(-50%, -50%);
+#blok1, #blok4 {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
 
-    padding: 18px 45px;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.domeinen {
+    border: 1px solid black;
+    width: 50rem;
+    height: 50rem;
+}
 
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 8px #27ae60;
-    z-index: 20;
-    transition: background-color 0.2s;
+.containerGrid {
+    display: grid;
+    grid-template-columns: 12rem 12rem 12rem;
+    grid-template-rows: 12rem 12rem 12rem;
+    padding: 1rem;
+
+    div {
+        padding: 1rem;
+        text-align: center;
+        height: 10rem;
+        width: 10rem;
+    }
+    #item1, #item2, #item3, #item4 {
+        border-radius: 50%;
+        text-align: center;
+        align-content: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .top {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .left {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .right {
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .bottom {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    #itemLeeg {
+        grid-row: 2;
+        grid-column: 2;
+    }
+}
+
+
+
+#item1 {
+    background-color: #01AFEB;
+}
+
+#item2 {
+    background-color: #E2B744;
+}
+
+#item3 {
+    background-color: #F1911F;
+}
+
+#item4 {
+    background-color: #B3065F;
+}
+
+.highlight {
+    scale: 110%;
+    box-shadow: 10px 10px 20px black;
+}
+
+#start {
+    width: 10rem;
+}
+
+.bg-economisch {
+    background: #00adef !important;
+    background-image: none !important;
+    transition: background 0.6s ease;
+}
+
+.bg-sociaal {
+    background: #f8e010 !important;
+    background-image: none !important;
+    transition: background 0.6s ease;
+}
+
+.bg-cultureel {
+    background: #f7941d !important;
+    background-image: none !important;
+    transition: background 0.6s ease;
+}
+
+.bg-politiek {
+    background: #e61d8c !important;
+    background-image: none !important;
+    transition: background 0.6s ease;
+}
+
+#header, #footer {
+    background-color: #cccccc;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0.45)) !important;
+    transition: background-color 0.6s ease-in-out;
 }
