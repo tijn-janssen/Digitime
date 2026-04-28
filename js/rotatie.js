@@ -51,9 +51,6 @@ button.addEventListener("click", e => {
         footer.classList.add("bg-politiek");
     }
 
-
-
-
     [item1, item2, item3, item4].forEach(item => {
         if (item.classList.contains("top")) {
             item.classList.add("highlight");

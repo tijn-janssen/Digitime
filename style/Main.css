@@ -12,10 +12,11 @@ body {
     position: relative;
     min-height: 100vh;
     padding-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
 
     .tijd {
-        border-bottom: 2px solid black;
-
+        border-bottom: 2px solid;
     }
 
     p.tijd {
@@ -25,9 +26,10 @@ body {
     section {
         padding-bottom: 2rem;
 
-        img {
-            width: auto;
-            height: 100%;
+        img, video {
+            border-radius: 3rem;
+            max-width: 100%;
+            height: auto;
         }
 
     }
@@ -100,6 +102,8 @@ footer {
 
     li {
         text-align: center;
+        padding-left: 0;
+        padding-right: 0;
 
         a {
             display: flex;
