@@ -8,6 +8,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const elements = document.querySelectorAll('.fadeInRechts, .fadeInLinks');
 
-elements.forEach((el) => {
-    observer.observe(el);
+elements.forEach((e) => {
+    observer.observe(e);
 });
