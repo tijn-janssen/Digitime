@@ -56,7 +56,6 @@ const vlieg = () => {
 };
 
 const resetGame = () => {
-    alert("Helaas! Score: " + startScore);
     spelBezig = false;
     startKnop.style.display = "block";
     startScore = 0;
@@ -65,7 +64,7 @@ const resetGame = () => {
     vogel.velocity = 0;
     muur.x = canvas.width;
     muur.speed = 2;
-    scoreTekstVak.innerText = "Score: 0";
+    scoreTekstVak.innerText = "Score: " + startScore;
     vraagTekstVak.innerText = "Klik op START";
 };
 

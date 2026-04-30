@@ -22,35 +22,45 @@
 
 <section class="container pt-5">
     <div class="row">
-       <div class="col-12 d-flex justify-content-center">
-           <div class="containerGrid">
-               <div class="top highlight" id="item1">Economisch</div>
-               <div class="left" id="item2">Sociaal</div>
-               <div id="itemLeeg"></div>
-               <div class="right" id="item3">Cultureel</div>
-               <div class="bottom" id="item4">Politiek</div>
-           </div>
-       </div>
-        <div class="row mt-4">
-            <div class="col-12 text-center">
-                <button id="start" class="btn btn-primary">Draai</button>
+        <div class="col-12 col-md-6 my-auto">
+            <h1 id="headerDomein">Economie: Hoe we overleven en groeien</h1>
+            <p id="textDomein">Binnen het economische domein draait alles om de middelen van bestaan. Het beschrijft hoe
+                mensen proberen te overleven en rijkdom te vergaren. In de vroege geschiedenis ging dit vooral over
+                landbouw en zelfvoorziening, maar later verschoof de focus naar handel, de opkomst van steden en de
+                industriële revolutie. Het gaat over wat mensen produceren, hoe ze handelen met anderen en hoe geld of
+                ruilmiddelen de wereld veranderen.</p>
+            <button id="start" class="btn btn-primary">Volgende</button>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center w-md-100">
+            <div class="containerGrid">
+                <div class="top highlight" id="item1">Economisch</div>
+                <div class="left" id="item2">Sociaal</div>
+                <div id="itemLeeg"></div>
+                <div class="right" id="item3">Cultureel</div>
+                <div class="bottom" id="item4">Politiek</div>
             </div>
+
         </div>
     </div>
 </section>
 
 
 
-<section>
-    <div id="game-container">
-        <canvas id="gameCanvas"></canvas>
+<section class="container my-5">
+    <div class="row">
+        <div class="col-12 d-flex flex-column align-items-center">
 
-        <div id="ui-layer">
-            <div id="question-text">Klik op start om te beginnen</div>
-            <div id="score-text">Score: 0</div>
+            <div id="ui-layer">
+                <div id="question-text">Klik op start om te beginnen</div>
+                <div id="score-text">Score: 0</div>
+            </div>
+
+            <div id="game-container">
+                <canvas id="gameCanvas"></canvas>
+                <button id="start-knop">START SPEL</button>
+            </div>
+
         </div>
-
-        <button id="start-knop">START SPEL</button>
     </div>
 </section>
 
