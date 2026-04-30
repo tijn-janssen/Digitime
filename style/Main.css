@@ -1,5 +1,6 @@
 @import "bootstrap.min.css";
 @import "global_vars.css";
+@import "fadeIn.css";
 
 * {
     padding: 0;
