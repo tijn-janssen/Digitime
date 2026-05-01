@@ -128,3 +128,22 @@
 .fade-out {
     opacity: 0 !important;
 }
+
+@media screen and (max-width: 600px) {
+
+    .containerGrid {
+        grid-template-columns: repeat(2, 8rem);
+        grid-template-rows: repeat(3, 8rem);
+        gap: 0.5rem;
+    }
+
+    .containerGrid div {
+        width: 7rem;
+        height: 7rem;
+        font-size: 0.9rem;
+    }
+
+    #itemLeeg {
+        display: none;
+    }
+}

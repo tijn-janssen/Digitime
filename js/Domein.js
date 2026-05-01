@@ -141,7 +141,7 @@ window.addEventListener("keydown", (e) => {
     e.preventDefault();
 });
 
-window.addEventListener("touchstart", (e) => {
+gameCanvas.addEventListener("touchstart", (e) => {
     vlieg();
     e.preventDefault();
 }, { passive: false });

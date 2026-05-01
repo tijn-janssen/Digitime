@@ -136,7 +136,7 @@ body {
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 
-    touch-action: none;
+    touch-action: pan-y;
     user-select: none;
     -webkit-user-select: none;
 
@@ -182,4 +182,12 @@ body {
         transform: translate(-50%, -45%) scale(0.95);
         box-shadow: 0 2px #27ae60;
     }
+}
+
+html, body {
+    height: 100%;
+}
+
+#ui-layer, #start-knop {
+    pointer-events: auto; /* Zorgt dat de knop wel klikbaar blijft */
 }
