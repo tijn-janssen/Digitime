@@ -1,3 +1,17 @@
+header {
+    h1 {
+        color: White;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
 #blok2 {
     margin-left: 5rem;
     margin-right: 20rem;
@@ -133,8 +147,8 @@
 
     .containerGrid {
         scale: 0.9;
-        grid-template-columns: repeat(3, 7.5rem);
-        grid-template-rows: repeat(3, 7.5rem);
+        grid-template-columns: 7.5rem 7.5rem 7.5rem;
+        grid-template-rows: 7.5rem 7.5rem 7.5rem;
         gap: 0.5rem;
         margin: 0 auto;
         width: fit-content;
