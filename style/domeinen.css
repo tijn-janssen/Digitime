@@ -12,6 +12,10 @@ header {
     }
 }
 
+body  {
+    background-color: black;
+}
+
 #blok2 {
     margin-left: 5rem;
     margin-right: 20rem;
@@ -143,7 +147,7 @@ header {
     opacity: 0 !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
 
     .containerGrid {
         scale: 0.9;
@@ -163,4 +167,21 @@ header {
     .containerGrid #itemLeeg {
         display: none;
     }
+}
+
+@media screen and (max-width: 991px) {
+    .containerGrid {
+        display: grid;
+        grid-template-columns: 7rem 7rem 7rem;
+        grid-template-rows: 7rem 7rem 7rem;
+        padding: 1rem;
+
+        div {
+            width: 7rem;
+            height: 7rem;
+            font-size: 0.9rem;
+        }
+    }
+
+
 }

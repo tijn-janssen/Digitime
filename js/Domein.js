@@ -5,7 +5,7 @@ const scoreTekstVak = document.getElementById("score-text");
 const startKnop = document.getElementById("start-knop");
 
 const pasCanvasAan = () => {
-    if (window.innerWidth <= 600) {
+    if (window.innerWidth < 768) {
         // Mobiele weergave: verticaal (portrait)
         canvas.width = 500;
         canvas.height = 800;
@@ -34,7 +34,11 @@ const quizVragen = [
         options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
         correct: 0
     },
-    {q: "Bouw van religieuze kathedralen:", options: ["Politiek", "Economisch", "Sociaal", "Cultureel"], correct: 3},
+    {
+        q: "Bouw van religieuze kathedralen:",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
     {
         q: "Handelscontacten tussen Europa en Azië:",
         options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
@@ -45,7 +49,11 @@ const quizVragen = [
         options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
         correct: 2
     },
-    {q: "Wettelijk verbod op kinderarbeid:", options: ["Politiek", "Economisch", "Sociaal", "Cultureel"], correct: 0},
+    {
+        q: "Wettelijk verbod op kinderarbeid:",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
     {
         q: "Verspreiding van kennis via boekdrukkunst:",
         options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
@@ -61,9 +69,163 @@ const quizVragen = [
         options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
         correct: 2
     },
-    {q: "Grensoorlog tussen twee staten:", options: ["Politiek", "Economisch", "Sociaal", "Cultureel"], correct: 0},
+    {
+        q: "Grensoorlog tussen twee staten:",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
     {
         q: "Ontwikkeling van de Griekse filosofie:",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "Het instellen van een centraal belastingstelsel door de koning.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De introductie van het schrift in oude beschavingen.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "Het oprichten van gilden in middeleeuwse steden.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 1
+    },
+    {
+        q: "De afschaffing van de feodale rechten tijdens de Franse Revolutie.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 2
+    },
+    {
+        q: "Het sluiten van kloosters en de overgang naar het protestantisme.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "De uitbreiding van het kiesrecht naar vrouwen.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De opkomst van de textielindustrie in de negentiende eeuw.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 1
+    },
+    {
+        q: "De introductie van de leerplicht.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 2
+    },
+    {
+        q: "De bouw van de Chinese Muur.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De uitvinding van de boekdrukkunst.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "Het ontstaan van het feodale stelsel.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De invoering van de euro als gezamenlijk betaalmiddel.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 1
+    },
+    {
+        q: "De oprichting van vakbonden.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 2
+    },
+    {
+        q: "De bloei van de wetenschap tijdens de Renaissance.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "Het uitroepen van de republiek en het afschaffen van de monarchie.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De ontdekking van nieuwe zeeroutes naar Indië.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 1
+    },
+    {
+        q: "De afschaffing van de slavernij in de negentiende eeuw.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 2
+    },
+    {
+        q: "Het vertalen van de Bijbel in de volkstaal door Maarten Luther.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "Het vormen van een militaire alliantie tussen verschillende staten.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De industrialisatie en de trek van het platteland naar de stad.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 1
+    },
+    {
+        q: "De oprichting van de eerste openbare scholen voor het gewone volk.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 2
+    },
+    {
+        q: "De verspreiding van de islam via handelsnetwerken en veroveringen.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "Het houden van verkiezingen voor een parlement.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De invoering van de inkomstenbelasting door de overheid.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 1
+    },
+    {
+        q: "De ontwikkeling van de verzorgingsstaat in de twintigste eeuw.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 2
+    },
+    {
+        q: "De bouw van gotische kathedralen in de Middeleeuwen.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 3
+    },
+    {
+        q: "Het benoemen van een nieuwe minister-president.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 0
+    },
+    {
+        q: "De invoering van de guldens en het ontstaan van de nationale bank.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 1
+    },
+    {
+        q: "De verbetering van de leefomstandigheden in de volkswijken.",
+        options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
+        correct: 2
+    },
+    {
+        q: "Het schrijven van het toneelstuk Romeo en Julia door Shakespeare.",
         options: ["Politiek", "Economisch", "Sociaal", "Cultureel"],
         correct: 3
     }
@@ -80,17 +242,17 @@ let vogel = {
     x: 100,
     y: canvas.height / 2,
     get width() {
-        return (canvas.width <= 600) ? 70 : 55;
+        return (canvas.width < 768) ? 70 : 55;
     },
     get height() {
-        return (canvas.width <= 600) ? 70 : 55;
+        return (canvas.width < 768) ? 70 : 55;
     },
     velocity: 0,
     get gravity() {
-        return (canvas.width <= 600) ? 0.1 : 0.05;
+        return (canvas.width < 768) ? 0.1 : 0.05;
     },
     get lift() {
-        return (canvas.width <= 600) ? -4 : -2;
+        return (canvas.width < 768) ? -4 : -2;
     }
 };
 

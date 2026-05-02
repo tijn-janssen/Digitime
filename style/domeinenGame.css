@@ -118,7 +118,7 @@
     user-select: none;
     -webkit-user-select: none;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 767px) {
         background-image: url('../fotos/gameAchtergrondTelefoon.png');
         max-width: 450px;
         aspect-ratio: 9 / 16;
@@ -137,7 +137,7 @@
 #start-knop {
     position: absolute;
     top: 85%;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 767px) {
         top: 75%;
     }
     left: 50%;
