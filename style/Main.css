@@ -11,6 +11,7 @@
 header img {
     max-width: 100%;
     min-height: 15rem;
+    height: auto;
     border-radius: 0;
 }
 
@@ -36,8 +37,12 @@ body {
         img, video {
             border-radius: 3rem;
             max-width: 100%;
-            width: 100%;
             height: auto;
+            object-fit: cover;
+        }
+
+        video {
+            max-width: 60%;
         }
 
     }
