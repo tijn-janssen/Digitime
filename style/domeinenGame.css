@@ -79,6 +79,7 @@
 }
 
 #question-text {
+    color: white;
     font-size: 20px;
     font-weight: bold;
     max-width: 700px;
@@ -88,6 +89,7 @@
 }
 
 #score-text {
+    color: white;
     padding: 15px 25px;
     font-size: 20px;
     font-weight: bold;
