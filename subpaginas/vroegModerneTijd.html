@@ -23,11 +23,21 @@
 <body>
 <header class="container-fluid">
   <div class="row">
-    <img class="col-12 col-md-2" src="/fotos/logoWhite.svg" alt="">
+    <a class="col-12 col-md-2" href="../index.html"><img src="/fotos/logoWhite.svg" alt=""></a>
     <h1 class="col-9 col-md-8  col-lg-9 my-auto mb-4 mb-md-auto">De Vroegmoderne tijd</h1>
     <p class="col-3 col-md-1 my-auto fs-3 h-100 mb-4 mb-md-auto"><a href="../index.html">Terug</a></p>
   </div>
-</header><p class="ondertitel p-2">ca. 1492 - 1789</p>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <p class="ondertitel p-2 col-8">ca. 1492 - 1789</p>
+    <div class="d-flex justify-content-end p-2 pe-3 pe-md-5 col-4">
+      <input id="darkModeLightMode" name="darkMode/lightMode" type="checkbox">
+      <label for="darkModeLightMode" id="darkMode">Dark mode</label>
+      <label for="darkModeLightMode" id="lightMode">Light mode</label>
+    </div>
+  </div>
+</div>
 
 <section class="container">
   <div class="row">
@@ -46,7 +56,7 @@
 
 <section class="container">
   <div class="row">
-    <img src="../fotos/vroegModerne3.png" alt="Kaart van de ontdekkingsreizen en de reformatie" class="col-12 col-md-6">
+    <img src="../fotos/vroegModerne3.png" alt="Kaart van de ontdekkingsreizen en de reformatie" class="col-12 col-md-6 order-1 order-md-0">
     <div class="col-12 col-md-6 my-md-auto">
       <h2>Vroegmoderne tijd: Ontdekkingen en Reformatie</h2>
       <p class="tijd">ca. 1492 – 1560</p>
@@ -399,6 +409,9 @@
   </script>
 
 </section>
+
+<script src="../js/Darkmode.js"></script>
+
 <footer class="ps-3 mt-5 py-5">
   <p class="fw-bold">DIGITIME</p>
   <p>Leren over de geschiedenis, stap voor stap.</p>

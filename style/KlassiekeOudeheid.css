@@ -19,7 +19,7 @@ body {
         }
     }
 
-    h2 {
+    h2, p {
         border-color: #253562 !important;
     }
 }

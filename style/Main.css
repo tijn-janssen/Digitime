@@ -22,6 +22,9 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    transition: background-color 0.6s ease;
+    background-color: white;
+    color: #272727;
 
     .tijd {
         border-bottom: 2px solid;
@@ -70,6 +73,10 @@ body {
         width: 100%;
     }
 
+    .btn-primary {
+        border: 0;
+    }
+
     #domeinen {
         font-size: 2rem;
         color: white;
@@ -115,7 +122,6 @@ footer {
     margin: auto;
 
     li {
-        text-align: center;
         padding-left: 0;
         padding-right: 0;
 
@@ -201,9 +207,30 @@ footer {
 #Heden div .tijdvak{
     background-color: #F34033;
     border-radius: 0 0 2rem 2rem;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.6s ease;
 
     &:hover {
         background-color: #c43329;
     }
+}
+div {
+    label {
+        font-weight: bold;
+    }
+
+    #darkModeLightMode {
+        display: none;
+    }
+}
+
+.accordion-body {
+    background-color: black;
+}
+
+.no-transition, .no-transition * {
+    transition: none !important;
+}
+
+#darkMode, #lightMode {
+    cursor: pointer;
 }

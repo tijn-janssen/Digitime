@@ -11,13 +11,20 @@
     <link rel="stylesheet" href="../style/domeinen.css">
 </head>
 <body>
-<header class="container-fluid" id="header">
+<header class="container-fluid mb-md-5 mb-2" id="header">
     <div class="row">
         <img class="col-12 col-md-2" src="/fotos/logoWhite.svg" alt="">
         <h1 class="col-9 col-md-8  col-lg-9 my-auto mb-4 mb-md-auto">De geschiedenis domeinen</h1>
         <p class="col-3 col-md-1 my-auto fs-3 h-100 mb-4 mb-md-auto"><a href="../index.html">Terug</a></p>
     </div>
 </header>
+
+<div class="d-flex justify-content-end pe-md-5 pe-3 pb-5">
+    <input id="darkModeLightMode" name="darkMode/lightMode" type="checkbox">
+    <label for="darkModeLightMode" id="darkMode">Dark mode</label>
+    <label for="darkModeLightMode" id="lightMode">Light mode</label>
+</div>
+
 
 <section class="container pt-5">
     <div class="row mx-auto">
@@ -49,9 +56,11 @@
     <div class="row">
         <div class="col-12 d-flex flex-column align-items-center">
 
-            <div id="ui-layer">
-                <div id="question-text">Klik op start om te beginnen</div>
-                <div id="score-text">Score: 0</div>
+            <div class="container-fluid vraagEnScore">
+                <div id="ui-layer" class="row">
+                    <div class="col-12 col-md-8 justify-content-center justify-content-md-start" id="question-text">Klik op start om te beginnen</div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end" id="score-text">Score: 0</div>
+                </div>
             </div>
 
             <div id="game-container">
@@ -69,6 +78,7 @@
     <p class="mb-0">&copy; 2026 DIGITIME - Alle rechten voorbehouden.</p>
 </footer>
 <script src="../js/Domein.js"></script>
+<script src="../js/Darkmode.js"></script>
 <script src="../js/rotatie.js"></script>
 </body>
 </html>

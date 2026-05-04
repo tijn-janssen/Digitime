@@ -23,13 +23,21 @@
 <body>
 <header class="container-fluid">
     <div class="row">
-        <img class="col-12 col-md-2" src="/fotos/logoWhite.svg" alt="">
+        <a class="col-12 col-md-2" href="../index.html"><img src="/fotos/logoWhite.svg" alt=""></a>
         <h1 class="col-9 col-md-8  col-lg-9 my-auto mb-4 mb-md-auto">De Prehistorie</h1>
         <p class="col-3 col-md-1 my-auto fs-3 h-100 mb-4 mb-md-auto"><a href="../index.html">Terug</a></p>
     </div>
 </header>
-<p class="ondertitel p-2">ca. 2,3 miljoen v.C. – 3300 v.C.</p>
-
+<div class="container-fluid">
+    <div class="row">
+        <p class="ondertitel p-2 col-8">ca. 2,3 miljoen v.C. – 3300 v.C.</p>
+        <div class="d-flex justify-content-end p-2 pe-3 pe-md-5 col-4">
+            <input id="darkModeLightMode" name="darkMode/lightMode" type="checkbox">
+            <label for="darkModeLightMode" id="darkMode">Dark mode</label>
+            <label for="darkModeLightMode" id="lightMode">Light mode</label>
+        </div>
+    </div>
+</div>
 <section class="container">
     <div class="row">
         <div class="col-12 col-md-6 my-md-auto">
@@ -59,6 +67,7 @@
 </section>
 <section class="container">
     <div class="row">
+        <img class="col-12 col-md-6 order-1 order-md-0" src="/fotos/prehistorieSamenleving.png" alt="Foto van de samenleving in de prehistorie">
         <div class="col-12 col-md-6 my-md-auto">
             <h2 class="tijd">Hoe leefden mensen in de prehistorie?</h2>
             <p>
@@ -70,7 +79,6 @@
                 opslaan.
             </p>
         </div>
-        <img class="col-12 col-md-6" src="/fotos/prehistorie.png" alt="Foto van de samenleving in de prehistorie">
     </div>
 </section>
 <section class="container">
@@ -421,6 +429,8 @@
 <!-- Elfsight AI Chatbot | DIGITIME-Prehistorie -->
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-83e33f7f-6514-4f77-9947-352e2d98ad16" data-elfsight-app-lazy></div>
+
+<script src="../js/Darkmode.js"></script>
 
 <footer class="ps-3 mt-5 py-5">
     <p class="fw-bold">DIGITIME</p>

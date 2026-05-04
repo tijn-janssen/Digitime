@@ -19,7 +19,7 @@ body {
         }
     }
 
-    h2 {
+    h2, .tijd {
         border-color: #4B6327 !important;
     }
 }
