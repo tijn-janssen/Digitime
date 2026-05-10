@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>De geschiedenisdomeinen</title>
-    <link rel="shortcut icon" href="../fotos/faviconWhite.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../Digitime/fotos/faviconWhite.ico" type="image/x-icon">
     <link href="/style/Main.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../style/domeinenGame.css">
     <link rel="stylesheet" href="../style/domeinen.css">
 </head>
 <body>
-<header class="container-fluid mb-md-5 mb-2" id="header">
+<header class="container-fluid mb-2" id="header">
     <div class="row">
-        <img class="col-12 col-md-2" src="/fotos/logoWhite.svg" alt="">
+        <a class="col-12 col-md-2" id="logo" href="../index.html"><img id="logoWit" src="../fotos/logoWhite.svg" alt=""><img id="logoZwart" src="../fotos/logo.svg" alt=""></a>
         <h1 class="col-9 col-md-8  col-lg-9 my-auto mb-4 mb-md-auto">De geschiedenis domeinen</h1>
         <p class="col-3 col-md-1 my-auto fs-3 h-100 mb-4 mb-md-auto"><a href="../index.html">Terug</a></p>
     </div>
@@ -26,7 +26,7 @@
 </div>
 
 
-<section class="container pt-5">
+<section class="container">
     <div class="row mx-auto">
         <div class="col-12 col-md-6 my-auto">
             <h1 id="headerDomein">Economie: Hoe we overleven en groeien</h1>
@@ -35,15 +35,14 @@
                 landbouw en zelfvoorziening, maar later verschoof de focus naar handel, de opkomst van steden en de
                 industriële revolutie. Het gaat over wat mensen produceren, hoe ze handelen met anderen en hoe geld of
                 ruilmiddelen de wereld veranderen.</p>
-            <button id="start" class="btn btn-primary mb-4 mb-md-0 align">Volgende</button>
+            <button id="start" class="btn btn-primary mb-2 mb-md-0 align">Volgende</button>
         </div>
         <div class="col-12 col-md-6 d-flex justify-content-center">
-            <div class="containerGrid">
-                <div class="top highlight" id="item1">Economisch</div>
-                <div class="left" id="item2">Sociaal</div>
-                <div id="itemLeeg"></div>
-                <div class="right" id="item3">Cultureel</div>
-                <div class="bottom" id="item4">Politiek</div>
+            <div id="achtergrondDomeinen">
+                <div class="Boven domein-item" id="Economisch">Economisch</div>
+                <div class="Rechts domein-item" id="Cultureel">Cultureel</div>
+                <div class="Onder domein-item" id="Politiek">Politiek</div>
+                <div class="Links domein-item" id="Sociaal">Sociaal</div>
             </div>
 
         </div>
@@ -52,7 +51,7 @@
 
 
 
-<section class="container my-5">
+<section class="container my-2">
     <div class="row">
         <div class="col-12 d-flex flex-column align-items-center">
 
@@ -79,6 +78,6 @@
 </footer>
 <script src="../js/Domein.js"></script>
 <script src="../js/Darkmode.js"></script>
-<script src="../js/rotatie.js"></script>
+<script src="../js/rotatieV2.js"></script>
 </body>
 </html>
