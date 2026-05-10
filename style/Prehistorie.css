@@ -1,77 +1,87 @@
+:root {
+    --deep-coffee: #52251b;
+    --russet-brown: #7b3d32;
+    --burnt-sienna: #994632;
+    --terra-cotta: #a45241;
+    --desert-sand: #d47b68;
+    --clean-white: #ffffff;
+    --charcoal-grey: #555555;
+
+    --gradient-primary: linear-gradient(90deg, rgba(82, 37, 27, 1) 0%, rgba(123, 61, 50, 1) 100%);
+}
+
 body {
-    color: #52251b ;
+    color: var(--deep-coffee);
+}
 
-    header {
-        background: #52251B;
-        background: linear-gradient(90deg, rgba(82, 37, 27, 1) 0%, rgba(123, 61, 50, 1) 100%);
-        color: white;
+header {
+    background: var(--deep-coffee);
+    background: var(--gradient-primary);
+    color: var(--clean-white);
+}
 
-        h1 {
-            color: White;
-        }
+header h1 {
+    color: var(--clean-white);
+}
 
-        a {
-            color: white;
-            text-decoration: none;
-            &:hover {
-                color: black;
-            }
-        }
-    }
+header a {
+    color: var(--clean-white);
+    text-decoration: none;
+}
 
-    h2, .tijd {
-        border-color: #52251b !important;
-    }
+header a:hover {
+    color: black;
+}
+
+h2, .tijd {
+    border-color: var(--deep-coffee) !important;
 }
 
 .accordion-button {
-    background-color: #a45241;
-    color: white;
+    background-color: var(--terra-cotta);
+    color: var(--clean-white);
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #d47b68;
-    color: white;
+    background-color: var(--desert-sand);
+    color: var(--clean-white);
 }
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,.125);
+    border-color: rgba(0, 0, 0, .125);
 }
 
 .accordion-body {
-    background-color: #ffffff;
-    color: #555;
+    background-color: var(--clean-white);
+    color: var(--charcoal-grey);
 }
 
 .btn-primary {
-    background-color: #52251b;
-    color: white;
+    background-color: var(--deep-coffee);
+    color: var(--clean-white);
+    border: none;
 }
 
-.btn, .btn-primary:hover {
-    background-color: #994632; !important;
-    color: white;
+.btn:hover,
+.btn-primary:hover {
+    background-color: var(--burnt-sienna) !important;
+    color: var(--clean-white);
 }
 
-.btn-primary:active {
-    background-color: #52251b;
-    color: white;
-}
-
+.btn-primary:active,
 .btn-primary:focus {
-    background-color: #52251b;
-    color: white;
+    background-color: var(--deep-coffee);
+    color: var(--clean-white);
 }
 
 .btn-primary:focus,
 .btn-primary:active:focus {
-    background-color: #52251b; !important;
     border-color: transparent !important;
 }
 
 footer {
-    background: #52251B;
-    background: linear-gradient(90deg, rgba(82, 37, 27, 1) 0%, rgba(123, 61, 50, 1) 100%);
-    color: white;
+    background: var(--deep-coffee);
+    background: var(--gradient-primary);
+    color: var(--clean-white);
 }

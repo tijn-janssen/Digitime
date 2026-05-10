@@ -46,6 +46,7 @@ body {
 
         video {
             max-width: 60%;
+            object-fit: contain;
         }
 
     }
@@ -78,7 +79,7 @@ body {
     }
 
     #domeinen {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
         text-decoration: none;
         background-color: Grey;
@@ -93,12 +94,9 @@ body {
 }
 
 #mainPageHeader {
-    /*background-image:*/
-    /*        linear-gradient(90deg,rgba(82, 37, 27, 0.5) 0%, rgba(0, 69, 92, 0.5) 16%, rgba(37, 53, 98, 0.5) 33%, rgba(92, 119, 47, 0.5) 50%, rgba(255, 217, 58, 0.5) 68%, rgba(240, 105, 54, 0.5) 84%, rgba(243, 64, 51, 0.5) 100%),*/
-    /*url("../fotos/header.jpeg");*/
     background-image:
-            linear-gradient(90deg, rgba(39, 39, 39, 0.5) 0%, rgba(39, 39, 39, 0.5) 100%),
-            url("../fotos/header.jpeg");
+            linear-gradient(90deg, rgba(27, 27, 27, 0.5) 0%, rgba(27, 27, 27, 0.5) 100%),
+            url("../../../Digitime/fotos/header.jpeg");
     background-size: cover;
     width: auto;
     max-height: 300px;
@@ -236,4 +234,107 @@ div {
 
 #darkMode, #lightMode {
     cursor: pointer;
+}
+
+#headerToBodyFade {
+    height: 1.5rem;
+}
+
+#bodyToFooterFade {
+    height: 1.5rem;
+}
+
+#fotoDomeinen {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    scale: 0.8;
+
+    img {
+        border-radius: 0;
+    }
+
+    div div :nth-child(1) {
+        border-radius: 3rem 0 0 0;
+    }
+
+    div div :nth-child(2) {
+        border-radius: 0 3rem 0 0;
+    }
+
+    div div :nth-child(3) {
+        border-radius: 0 0 0 3rem;
+    }
+
+    div div :nth-child(4) {
+        border-radius: 0 0 3rem 0;
+    }
+
+    p {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    #tekstPolitiek {
+        border-radius: 3rem 0 0 0;
+        background-color: rgba(230, 29, 140, 0.5);
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+    }
+
+    #tekstEconomisch {
+        border-radius: 0 3rem 0 0;
+        background-color: rgba(0, 173, 239, 0.5);
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 75%;
+    }
+
+    #tekstSociaal {
+        border-radius: 0 0 0 3rem;
+        background-color: rgba(248, 224, 16, 0.5);
+        width: 50%;
+        height: 50%;
+        top: 75%;
+        left: 25%;
+    }
+
+    #tekstCultureel {
+        border-radius: 0 0 3rem 0;
+        background-color: rgba(247, 148, 29, 0.5);
+        width: 50%;
+        height: 50%;
+        top: 75%;
+        left: 75%;
+    }
+}
+
+#logo {
+    #logoWit {
+        display: block;
+    }
+    #logoZwart {
+        display: none;
+    }
+
+    &:hover {
+        #logoZwart {
+            display: block;
+        }
+        #logoWit {
+            display: none;
+        }
+    }
 }

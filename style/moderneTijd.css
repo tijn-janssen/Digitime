@@ -1,77 +1,89 @@
+:root {
+    --blood-red: #8b0200;
+    --deep-rose: #C43329;
+    --vibrant-red: #F34033;
+    --light-coral: #FF8E85;
+    --clean-white: #ffffff;
+    --charcoal-grey: #555555;
+    --gradient-red: linear-gradient(90deg, rgb(243, 64, 51) 0%, rgb(245, 80, 69) 100%);
+}
+
 body {
-    color: #F34033 ;
+    color: var(--vibrant-red);
+}
 
-    header {
-        background: #F34033;
-        background: linear-gradient(90deg, rgb(243, 64, 51) 0%, rgb(245, 80, 69) 100%);
-        color: white;
+header {
+    background: var(--vibrant-red);
+    background: var(--gradient-red);
+    color: var(--clean-white);
+}
 
-        h1 {
-            color: White;
-        }
+header h1 {
+    color: var(--clean-white);
+}
 
-        a {
-            color: white;
-            text-decoration: none;
-            &:hover {
-                color: black;
-            }
-        }
-    }
+header a {
+    color: var(--clean-white);
+    text-decoration: none;
+}
 
-    h2, .tijd {
-        border-color: #F34033 !important;
-    }
+header a:hover {
+    color: black;
+}
+
+h2, .tijd {
+    border-color: var(--vibrant-red) !important;
 }
 
 .accordion-button {
-    background-color: #a45241;
-    color: white;
+    background-color: var(--blood-red);
+    color: var(--clean-white);
 }
 
 .accordion-button:not(.collapsed) {
     background-color: #f55045;
-    color: white;
+    color: var(--clean-white);
 }
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,.125);
+    border-color: rgba(0, 0, 0, .125);
 }
 
 .accordion-body {
-    background-color: #ffffff;
-    color: #555;
+    background-color: var(--clean-white);
+    color: var(--charcoal-grey);
 }
 
 .btn-primary {
-    background-color: #F34033;
-    color: white;
+    background-color: var(--vibrant-red);
+    color: var(--clean-white);
 }
 
-.btn, .btn-primary:hover {
-    background-color: #994632; !important;
-    color: white;
+.btn:hover,
+.btn-primary:hover {
+    background-color: var(--blood-red) !important;
+    color: var(--clean-white);
 }
 
 .btn-primary:active {
-    background-color: #F34033;
-    color: white;
+    background-color: var(--vibrant-red);
+    color: var(--clean-white);
 }
 
 .btn-primary:focus {
-    background-color: #F34033;
-    color: white;
+    background-color: var(--vibrant-red);
+    color: var(--clean-white);
 }
 
 .btn-primary:focus,
 .btn-primary:active:focus {
-    background-color: #F34033; !important;
+    background-color: var(--vibrant-red) !important;
     border-color: transparent !important;
 }
 
 footer {
-    background: #F34033;
-    background: linear-gradient(90deg, rgb(243, 64, 51) 0%, rgb(245, 80, 69) 100%);
-    color: white;
+    background: var(--vibrant-red);
+    background: var(--gradient-red);
+    color: var(--clean-white);
 }

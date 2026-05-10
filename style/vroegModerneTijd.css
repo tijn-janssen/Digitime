@@ -1,78 +1,90 @@
-body {
-    color: #8C6500 ;
-
-    header {
-        background: #D4AC0D;
-        background: linear-gradient(90deg,rgba(212, 172, 13, 1) 0%, rgba(255, 217, 58, 1) 100%);
-        color: white;
-
-        h1 {
-            color: White;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-            &:hover {
-                color: black;
-            }
-        }
-    }
-
-    h2, .tijd {
-        border-color: #D4AC0D !important;
-    }
+:root {
+    --dark-gold: #8C6500;
+    --royal-gold: #D4AC0D;
+    --soft-gold: #E6C234;
+    --bright-yellow: #FFD93A;
+    --clean-white: #ffffff;
+    --charcoal-grey: #555555;
+    --gradient-gold: linear-gradient(90deg, rgba(212, 172, 13, 1) 0%, rgba(255, 217, 58, 1) 100%);
 }
 
+body {
+    color: var(--dark-gold);
+}
+
+header {
+    background: var(--royal-gold);
+    background: var(--gradient-gold);
+    color: var(--clean-white);
+}
+
+header h1 {
+    color: var(--clean-white);
+}
+
+header a {
+    color: var(--clean-white);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: black;
+}
+
+h2, .tijd {
+    border-color: var(--royal-gold) !important;
+}
 
 .accordion-button {
-    background-color: #E6C234;
-    color: white;
+    background-color: var(--soft-gold);
+    color: var(--clean-white);
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #D4AC0D;
-    color: white;
+    background-color: var(--royal-gold);
+    color: var(--clean-white);
 }
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,.125);
+    border-color: rgba(0, 0, 0, .125);
 }
 
 .accordion-body {
-    background-color: #ffffff;
-    color: #555;
+    background-color: var(--clean-white);
+    color: var(--charcoal-grey);
 }
 
 .btn-primary {
-    background-color: #E6C234;
-    color: white;
+    background-color: var(--soft-gold);
+    color: var(--clean-white);
+    border: none;
 }
 
-.btn, .btn-primary:hover {
-    background-color: #FFD93A; !important;
-    color: white;
+.btn:hover,
+.btn-primary:hover {
+    background-color: var(--bright-yellow) !important;
+    color: var(--clean-white);
 }
 
 .btn-primary:active {
-    background-color: #E6C234;
-    color: white;
+    background-color: var(--soft-gold);
+    color: var(--clean-white);
 }
 
 .btn-primary:focus {
-    background-color: #E6C234;
-    color: white;
+    background-color: var(--soft-gold);
+    color: var(--clean-white);
 }
 
 .btn-primary:focus,
 .btn-primary:active:focus {
-    background-color: #E6C234; !important;
+    background-color: var(--soft-gold) !important;
     border-color: transparent !important;
 }
 
 footer {
-    background: #D4AC0D;
-    background: linear-gradient(90deg,rgba(212, 172, 13, 1) 0%, rgba(255, 217, 58, 1) 100%);
-    color: white;
+    background: var(--royal-gold);
+    background: var(--gradient-gold);
+    color: var(--clean-white);
 }

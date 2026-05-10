@@ -1,78 +1,90 @@
-body {
-    color: #253562 ;
-
-    header {
-        background: #253562;
-        background: linear-gradient(90deg, rgba(37, 53, 98, 1) 0%, rgba(74, 93, 144, 1) 100%);
-        color: white;
-
-        h1 {
-            color: White;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-            &:hover {
-                color: black;
-            }
-        }
-    }
-
-    h2, p {
-        border-color: #253562 !important;
-    }
+:root {
+    --navy-blue: #253562;
+    --soft-navy: #4A5D90;
+    --deep-midnight: #1A2646;
+    --electric-blue: #0156B8;
+    --clean-white: #ffffff;
+    --charcoal-grey: #555555;
+    --gradient-navy: linear-gradient(90deg, rgba(37, 53, 98, 1) 0%, rgba(74, 93, 144, 1) 100%);
 }
 
+body {
+    color: var(--navy-blue);
+}
+
+header {
+    background: var(--navy-blue);
+    background: var(--gradient-navy);
+    color: var(--clean-white);
+}
+
+header h1 {
+    color: var(--clean-white);
+}
+
+header a {
+    color: var(--clean-white);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: black;
+}
+
+h2, p {
+    border-color: var(--navy-blue) !important;
+}
 
 .accordion-button {
-    background-color: #4A5D90;
-    color: white;
+    background-color: var(--soft-navy);
+    color: var(--clean-white);
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #253562;
-    color: white;
+    background-color: var(--navy-blue);
+    color: var(--clean-white);
 }
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,.125);
+    border-color: rgba(0, 0, 0, .125);
 }
 
 .accordion-body {
-    background-color: #ffffff;
-    color: #555;
+    background-color: var(--clean-white);
+    color: var(--charcoal-grey);
 }
 
 .btn-primary {
-    background-color: #1A2646;
-    color: white;
+    background-color: var(--deep-midnight);
+    color: var(--clean-white);
+    border: none;
 }
 
-.btn, .btn-primary:hover {
-    background-color: #0156B8; !important;
-    color: white;
+.btn:hover,
+.btn-primary:hover {
+    background-color: var(--electric-blue) !important;
+    color: var(--clean-white);
 }
 
 .btn-primary:active {
-    background-color: #1A2646;
-    color: white;
+    background-color: var(--deep-midnight);
+    color: var(--clean-white);
 }
 
 .btn-primary:focus {
-    background-color: #1A2646;
-    color: white;
+    background-color: var(--deep-midnight);
+    color: var(--clean-white);
 }
 
 .btn-primary:focus,
 .btn-primary:active:focus {
-    background-color: #1A2646; !important;
+    background-color: var(--deep-midnight) !important;
     border-color: transparent !important;
 }
 
 footer {
-    background: #253562;
-    background: linear-gradient(90deg, rgba(37, 53, 98, 1) 0%, rgba(74, 93, 144, 1) 100%);
-    color: white;
+    background: var(--navy-blue);
+    background: var(--gradient-navy);
+    color: var(--clean-white);
 }
