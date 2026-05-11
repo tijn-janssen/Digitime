@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>De Prehistorie – Geschiedenis 1ste graad</title>
+    <link rel="shortcut icon" href="../fotos/faviconWhite.ico" type="image/x-icon">
+    <link href="/style/Main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../style/eeuwen.css">
+</head>
+<body>
+<header class="container-fluid">
+    <div class="row">
+        <a class="col-12 col-md-2" id="logo" href="../index.html"><img id="logoWit" src="../fotos/logoWhite.svg" alt=""><img id="logoZwart" src="../fotos/logo.svg" alt=""></a>
+        <h1 class="col-9 col-md-8  col-lg-9 my-auto mb-4 mb-md-auto">De Prehistorie</h1>
+        <p class="col-3 col-md-1 my-auto fs-3 h-100 mb-4 mb-md-auto"><a href="../index.html">Terug</a></p>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="d-flex justify-content-end pe-md-5 pt-2 pe-3 pb-5">
+        <input id="darkModeLightMode" name="darkMode/lightMode" type="checkbox">
+        <label for="darkModeLightMode" id="darkMode">Dark mode</label>
+        <label for="darkModeLightMode" id="lightMode">Light mode</label>
+    </div>
+</div>
+
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="hist-calc-container">
+                <h2>Eeuw & Tijdvak Scanner</h2>
+                <p class="text-muted">Vul een jaartal in en ontdek waar het hoort.</p>
+
+                <input type="number" id="jaarInput" class="hist-input-field" placeholder="Bijv. 1000">
+
+                <div id="resultaatBox" class="hist-result-area">
+                    <div id="eeuwOutput" class="hist-eeuw-output">-</div>
+                    <div id="tijdvakOutput" class="hist-tijdvak-badge">Tijdvak</div>
+                    <p id="uitlegRegel" class="text-muted mt-3 small italic"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<script src="../js/Darkmode.js"></script>
+<script src="../js/eeuwen.js"></script>
+
+<footer class="ps-3 mt-5 py-5">
+    <p class="fw-bold">DIGITIME</p>
+    <p>Leren over de geschiedenis, stap voor stap.</p>
+    <p class="mb-0">&copy; 2026 DIGITIME - Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
+</html>

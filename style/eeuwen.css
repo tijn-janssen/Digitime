@@ -1,0 +1,117 @@
+:root {
+    --bg-card: #ffffff;
+    --bg-input: #f8fafc;
+    --bg-result: linear-gradient(145deg, #f0f4f8, #ffffff);
+    --text-main: #272727;
+    --text-input: #000000;
+    --border-input: #edf2f7;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #626262;
+    color: var(--clean-white);
+
+    a {
+        color: var(--clean-white);
+        text-decoration: none;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+body.dark-mode {
+    --bg-card: #333333;
+    --bg-input: #2C2C2C;
+    --bg-result: linear-gradient(145deg, #3d3d3d, #333333);
+    --text-main: #ffffff;
+    --text-input: #ffffff;
+    --border-input: #555555;
+    --shadow: rgba(0, 0, 0, 0.4);
+}
+
+.hist-calc-container {
+    background: var(--bg-card);
+    color: var(--text-main) !important;
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0px 15px 35px var(--shadow);
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.hist-calc-container,
+.hist-calc-container h2,
+.hist-calc-container p,
+.hist-calc-container .text-muted,
+.hist-calc-container small,
+#uitlegRegel {
+    color: var(--text-main) !important;
+}
+
+.hist-calc-container h2 { font-weight: 800; margin-bottom: 8px; }
+
+.hist-input-field {
+    width: 100%;
+    max-width: 220px;
+    padding: 14px 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    background: var(--bg-input);
+    color: var(--text-input) !important;
+    border: 3px solid var(--border-input);
+}
+
+body.dark-mode .hist-input-field { color-scheme: dark; }
+.hist-input-field:focus { outline: none; transform: scale(1.02); }
+
+.hist-result-area {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 18px;
+    background: var(--bg-result);
+    display: none;
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hist-eeuw-output { font-size: 2.2rem; font-weight: 900; margin-bottom: 15px; }
+
+.hist-tijdvak-badge {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+#uitlegRegel {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 12px;
+    margin-top: 20px;
+    text-align: left;
+    background: rgba(143, 143, 143, 0.64);
+    border-radius: 1rem;
+}
+
+/* --- Tijdvak Kleuren (Deze blijven uniek) --- */
+.tv-pre { background: #52251b; color: #fff; }
+.tv-ono { background: #00455C; color: #fff; }
+.tv-oud { background: #253562; color: #fff; }
+.tv-mid { background: #4B6327; color: #fff; }
+.tv-vro { background: #D4AC0D; color: #fff; }
+.tv-mod { background: #ffe0b2; color: #d35400; }
+.tv-eig { background: #ede7f6; color: #512da8; }
