@@ -1,0 +1,89 @@
+:root {
+    --blood-red: #8b0200;
+    --deep-rose: #C43329;
+    --vibrant-red: #F34033;
+    --light-coral: #FF8E85;
+    --clean-white: #ffffff;
+    --charcoal-grey: #555555;
+    --gradient-red: linear-gradient(90deg, rgb(243, 64, 51) 0%, rgb(245, 80, 69) 100%);
+}
+
+body {
+    color: var(--vibrant-red);
+}
+
+header {
+    background: var(--vibrant-red);
+    background: var(--gradient-red);
+    color: var(--clean-white);
+}
+
+header h1 {
+    color: var(--clean-white);
+}
+
+header a {
+    color: var(--clean-white);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: black;
+}
+
+h2, .tijd {
+    border-color: var(--vibrant-red) !important;
+}
+
+.accordion-button {
+    background-color: var(--blood-red);
+    color: var(--clean-white);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f55045;
+    color: var(--clean-white);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+.accordion-body {
+    background-color: var(--clean-white);
+    color: var(--charcoal-grey);
+}
+
+.btn-primary {
+    background-color: var(--vibrant-red);
+    color: var(--clean-white);
+}
+
+.btn:hover,
+.btn-primary:hover {
+    background-color: var(--blood-red) !important;
+    color: var(--clean-white);
+}
+
+.btn-primary:active {
+    background-color: var(--vibrant-red);
+    color: var(--clean-white);
+}
+
+.btn-primary:focus {
+    background-color: var(--vibrant-red);
+    color: var(--clean-white);
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background-color: var(--vibrant-red) !important;
+    border-color: transparent !important;
+}
+
+footer {
+    background: var(--vibrant-red);
+    background: var(--gradient-red);
+    color: var(--clean-white);
+}
