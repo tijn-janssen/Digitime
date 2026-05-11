@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>De Prehistorie – Geschiedenis 1ste graad</title>
+    <title>Eeuwen rekenmachine – Geschiedenis 1ste graad</title>
     <link rel="shortcut icon" href="../fotos/faviconWhite.ico" type="image/x-icon">
     <link href="/style/Main.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -13,7 +13,7 @@
 <header class="container-fluid">
     <div class="row">
         <a class="col-12 col-md-2" id="logo" href="../index.html"><img id="logoWit" src="../fotos/logoWhite.svg" alt=""><img id="logoZwart" src="../fotos/logo.svg" alt=""></a>
-        <h1 class="col-9 col-md-8  col-lg-9 my-auto mb-4 mb-md-auto">De Prehistorie</h1>
+        <h1 class="col-9 col-md-8  col-lg-9 my-auto mb-4 mb-md-auto" id="eeuwenRekenmachine">Eeuwen rekenmachine</h1>
         <p class="col-3 col-md-1 my-auto fs-3 h-100 mb-4 mb-md-auto"><a href="../index.html">Terug</a></p>
     </div>
 </header>
@@ -29,10 +29,19 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
             <div class="hist-calc-container">
-                <h2>Eeuw & Tijdvak Scanner</h2>
+                <h2>Eeuw & Tijdvak Rekenmachine</h2>
                 <p class="text-muted">Vul een jaartal in en ontdek waar het hoort.</p>
 
                 <input type="number" id="jaarInput" class="hist-input-field" placeholder="Bijv. 1000">
+                <div class="hist-quick-buttons">
+                    <button type="button" class="btn-step" data-step="-1000">-1000</button>
+                    <button type="button" class="btn-step" data-step="-100">-100</button>
+                    <button type="button" class="btn-step" data-step="-10">-10</button>
+                    <button type="button" class="btn-step" data-step="10">+10</button>
+                    <button type="button" class="btn-step" data-step="100">+100</button>
+                    <button type="button" class="btn-step" data-step="1000">+1000</button>
+                    <button type="button" class="btn-reset" id="resetBtn">0</button>
+                </div>
 
                 <div id="resultaatBox" class="hist-result-area">
                     <div id="eeuwOutput" class="hist-eeuw-output">-</div>

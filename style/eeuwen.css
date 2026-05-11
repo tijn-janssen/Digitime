@@ -8,6 +8,10 @@
     --shadow: rgba(0, 0, 0, 0.1);
 }
 
+header h1, .header h1, header a {
+    color: #ffffff !important;
+}
+
 header {
     background-color: #626262;
     color: var(--clean-white);
@@ -107,11 +111,78 @@ body.dark-mode .hist-input-field { color-scheme: dark; }
     border-radius: 1rem;
 }
 
+.hist-quick-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn-step, .btn-reset {
+    padding: 12px 5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-input);
+    background: var(--bg-input);
+    color: var(--text-input);
+    outline: none;
+}
+
+.btn-step:hover {
+    background: #272727 !important;
+    color: white !important;
+    border-color: #272727 !important;
+    transform: translateY(-2px);
+}
+
+.btn-reset:hover {
+    background: #272727 !important;
+    color: white !important;
+    border-color: #272727 !important;
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    grid-column: span 3;
+    margin-top: 5px;
+    color: #272727;
+}
+
+body.dark-mode .btn-step,
+body.dark-mode .btn-reset {
+    background: #2C2C2C;
+    border-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .btn-reset {
+    color: #ffffff;
+}
+
+body.dark-mode .btn-step:hover {
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #191919 !important;
+}
+
+body.dark-mode .btn-reset:hover {
+    background: #ffffff !important;
+    border-color: #272727 !important;
+    color: #272727 !important;
+}
+
+.btn-step:active, .btn-reset:active {
+    transform: translateY(0);
+}
+
 /* --- Tijdvak Kleuren (Deze blijven uniek) --- */
 .tv-pre { background: #52251b; color: #fff; }
 .tv-ono { background: #00455C; color: #fff; }
 .tv-oud { background: #253562; color: #fff; }
 .tv-mid { background: #4B6327; color: #fff; }
 .tv-vro { background: #D4AC0D; color: #fff; }
-.tv-mod { background: #ffe0b2; color: #d35400; }
-.tv-eig { background: #ede7f6; color: #512da8; }
+.tv-mod { background: #f06936; color: #ffffff; }
+.tv-eig { background: #f34033; color: #ffffff; }

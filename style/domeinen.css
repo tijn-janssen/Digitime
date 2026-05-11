@@ -35,6 +35,10 @@ header {
 
 #start {
     width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-economisch {
