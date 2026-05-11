@@ -116,6 +116,15 @@ footer {
     background-color: grey;
     color: white;
     position: absolute;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: #272727;
+        }
+    }
 }
 
 #tijdlijn {
